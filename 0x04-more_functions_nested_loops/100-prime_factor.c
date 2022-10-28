@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints the largest prime number
+ * main - prints the largest prime factor
  * Return: Always 0 (success)
  */
 
@@ -14,13 +14,13 @@ int main(void)
 	{
 		if ((prime % 2) == 0)
 		{
-			prime /= 2;
+			(prime /= 2);
 			continue;
 		}
 		for (div = 3; div < (prime / 2); div += 2)
 		{
-			if ((prime % dive) == 0
-					prime /= div;
+			if ((prime % div) == 0)
+				(prime /= div);
 		}
 	}
 
