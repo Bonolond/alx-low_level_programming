@@ -3,21 +3,15 @@
 /**
  * print_number - prints an integer
  * @n: integer
+ * Return: Always 0 (success)
  */
 
 void print_number(int n)
 {
-	unsigned int x;
+	int x;
 
 	x = n
-	if (n < 0)
-	{
-		_putchar("-");
-		x = -n;
-	}
-	if (n > 0)
-	{
-		_putchar();
-		x = n;
-	}
+	print_number(n);
+	_putchar("\n");
+	return (0);
 }
