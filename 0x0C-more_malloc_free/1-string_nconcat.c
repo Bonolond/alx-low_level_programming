@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_nconcat - oncatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: first string
  * @s2: second string
  * @n: index
@@ -30,8 +30,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if (n > size2)
-		n = size2;
-		p = malloc((size1 + n + 1) * sizeof(char));
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
 
 	if (p == NULL)
 		return (0);
@@ -47,6 +47,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	p[i] = '\0';
 
-	_putchar("\n")
 	return (p);
 }
