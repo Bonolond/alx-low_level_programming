@@ -11,7 +11,10 @@ void print_number(int n)
 	int x;
 
 	x = n
+
 	print_number(n);
+
 	_putchar("\n");
+
 	return (0);
 }
